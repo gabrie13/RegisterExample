@@ -18,10 +18,10 @@ namespace CalculationTest.Services
 
     }
 
-    interface CalculationService : ICalculationService
-    {
-        Register SaveRegister(int id);
-        Register CreateRegister(int id);
-    }
+    //interface CalculationService : ICalculationService
+    //{
+    //    Register SaveRegister(int id);
+    //    Register CreateRegister(int id);
+    //}
     
 }

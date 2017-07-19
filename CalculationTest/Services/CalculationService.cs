@@ -51,15 +51,15 @@ namespace CalculationTest.Services
             
         }
 
-        public Register SaveRegister(int id)
-        {
-          // i have no idea
-        }
+        //public Register SaveRegister(int id)
+        //{
+        //  // i have no idea
+        //}
 
-        public Register CreateRegister()
-        {
+        //public Register CreateRegister()
+        //{
            
-        }
+        //}
 
         
 
