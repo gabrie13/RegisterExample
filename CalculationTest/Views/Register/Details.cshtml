@@ -1,0 +1,63 @@
+﻿@model CalculationTest.Models.RegisterDto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Register</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cash)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cash)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Visa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mastercard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mastercard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discover)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discover)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RegisterId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
