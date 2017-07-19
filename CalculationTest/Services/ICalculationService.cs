@@ -15,13 +15,9 @@ namespace CalculationTest.Services
 
         RegisterDto FindById(int id);
 
+        RegisterDto Create(RegisterDto register);
 
     }
 
-    //interface CalculationService : ICalculationService
-    //{
-    //    Register SaveRegister(int id);
-    //    Register CreateRegister(int id);
-    //}
     
 }

@@ -56,6 +56,23 @@ namespace CalculationTest.Services
         //  // i have no idea
         //}
 
+        public RegisterDto Create(RegisterDto register)
+        {
+            var reg = new Register
+            {
+                Cash = register.Cash,
+                Visa = register.Visa,
+                Amex = register.Amex,
+                Mastercard = register.Mastercard,
+                Discover = register.Discover
+            };
+            db.Registers.Add(reg);
+            db.SaveChanges();
+
+            register.RegisterId = reg.RegisterId;
+            return register;
+        }
+
         //public Register CreateRegister()
         //{
            

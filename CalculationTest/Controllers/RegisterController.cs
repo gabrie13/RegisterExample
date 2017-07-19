@@ -51,12 +51,11 @@ namespace CalculationTest.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "RegisterId,Cash,Visa,Mastercard,Amex,Discover")] Register register)
+        public ActionResult Create([Bind(Include = "RegisterId,Cash,Visa,Mastercard,Amex,Discover")] RegisterDto register)
         {
             if (ModelState.IsValid)
             {
-                db.Registers.Add(register);
-                db.SaveChanges();
+                register = _service.Create(register);
                 return RedirectToAction("Index");
             }
 
